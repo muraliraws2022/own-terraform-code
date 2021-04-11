@@ -1,6 +1,6 @@
 # Demostration of pass agruments in module using variable
 module "terraform-module" {
-  source = "github.com/saravananajay/terraform-modules-ec2.git"
+  source = "./terraform-modules-ec2/"
     region                     = "${var.region}"
     ami_id                     = "${var.ami_id}"
     instance_type              = "${var.instance_type}"
@@ -18,5 +18,9 @@ module "terraform-module" {
 #     tag                        = "module example"
 #
 # }
+
+output "public-ip" {
+  value = "${module.terraform-module.instance_ip}"
+}
 
 
