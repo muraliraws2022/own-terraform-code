@@ -1,9 +1,9 @@
 resource "aws_instance" "web-server" {
-  ami           = "ami-0742b4e673072066f"
+  ami           = "ami-02f26adf094f51167"
   instance_type = "t2.micro"
-  key_name      = "vignesh-saro"
+  key_name      = "demo-jenkins"
   tags = {
-    Name = "My-Terraform-server"
+    Name = "This server by jenkins"
   }
 } 
 
