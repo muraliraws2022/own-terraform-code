@@ -1,3 +1,7 @@
+username1=$1
+username2=$2
+
+
 echo "----who is executing this job---"
 sudo id
 
