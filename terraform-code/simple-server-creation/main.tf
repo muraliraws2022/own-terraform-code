@@ -1,5 +1,5 @@
 resource "aws_instance" "web-server" {
-  ami           = "ami-02f26adf094f51167"
+  ami           = "ami-0d6ba217f554f6137"
   instance_type = "t2.micro"
   key_name      = "demo-jenkins"
   tags = {
