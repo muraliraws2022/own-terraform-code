@@ -1,7 +1,7 @@
 resource "aws_instance" "web-server" {
   ami           = "ami-0a23ccb2cdd9286bb"
   instance_type = "t2.micro"
-  key_name      = "saro-arun"
+  key_name      = "${var.key_name}"
   tags = {
     Name = "This server by jenkins"
   }
