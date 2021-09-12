@@ -1,7 +1,7 @@
 resource "aws_instance" "web-server" {
-  ami           = "ami-0d6ba217f554f6137"
+  ami           = "ami-0a23ccb2cdd9286bb"
   instance_type = "t2.micro"
-  key_name      = "demo-jenkins"
+  key_name      = "saro-arun"
   tags = {
     Name = "This server by jenkins"
   }
@@ -22,5 +22,10 @@ output "instance_state" {
 
 output "Public-DNS" {
   value = "${aws_instance.web-server.public_dns}"
+}
+
+
+output "myserver-arn" {
+  value = "${aws_instance.web-server.arn}"
 }
 
