@@ -1,1 +1,1 @@
-key_name = "${var.key_nname}"
+key_name = "${var.key_name}"
