@@ -1,7 +1,7 @@
 variable "access_key" {}
 variable "secret_key" {}
 variable "region" {
-  default = "us-east-1"
+  default = "ap-south-1"
 }
 variable "private_key_path" {
   default = "terraform.pem"
