@@ -4,7 +4,7 @@ variable "region" {
   default = "ap-south-1"
 }
 variable "private_key_path" {
-  default = "terraform.pem"
+  default = "anbu-saro-mumbai.pem"
 }
 
 variable "ami_id" {
