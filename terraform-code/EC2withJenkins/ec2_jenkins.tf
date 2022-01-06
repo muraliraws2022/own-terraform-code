@@ -19,6 +19,7 @@ resource "aws_instance" "ec2_jenkins" {
     yum install java-1.8.0-openjdk-devel -y
     curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
     sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+    sudo sed -i 's/gpgcheck=1/gpgcheck=0/' /etc/yum.repos.d/jenkins.repo	
     yum install -y jenkins
     systemctl start jenkins
     systemctl status jenkins
