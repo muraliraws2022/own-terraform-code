@@ -5,7 +5,7 @@ variable "region" {
 variable "ami_id" {
   type = "map"
   default = {
-    us-east-1    = "ami-052cef05d01020f1d"
+    ap-south-1   = "ami-052cef05d01020f1d"
   }
 }
 variable "instance_type" {
