@@ -13,6 +13,6 @@ variable "ami_id" {
     us-east-1    = "ami-035b3c7efe6d061d5"
     eu-west-2    = "ami-132b3c7efe6sdfdsfd"
     eu-central-1 = "ami-9787h5h6nsn"
-    ap-south-1   = "ami-0a23ccb2cdd9286bb"
+    ap-south-1   = "ami-052cef05d01020f1d"
   }
 }
