@@ -1,12 +1,9 @@
-variable "region" {
-	type = string
+variable "region" {	
 }
 
-variable "ami" {
-	type = string
+variable "ami" {	
 }
 
 variable "instance_type" {
-	type    = string
 	default = "t2.micro"
 }
