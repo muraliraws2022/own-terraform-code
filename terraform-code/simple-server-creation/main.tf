@@ -1,31 +1,21 @@
+terraform {
+        backend "s3" {
+                bucket = "jan2022demo"
+                key    = "state-file-status/ec2terraform.tfstate"
+                region = "ap-south-1"
+        }
+}
+
 resource "aws_instance" "web-server" {
-  ami           = "ami-0dc5785603ad4ff54"
-  instance_type = "t2.micro"
-  key_name      = "saro-sid"
+  ami           = "ami-0d6ba217f554f6137"
+  instance_type = "t3.micro"
+  key_name      = "demo"
   tags = {
-    Name = "This server by jenkins"
+    Name = "This server by manual"
   }
 } 
 
 output "public-ip" {
   value = "${aws_instance.web-server.public_ip}"
-}
-
-output "private-ip" {
-  value = "${aws_instance.web-server.private_ip}"
-}
-
-output "instance_state" {
-  value = "${aws_instance.web-server.instance_state}"
-}
-
-
-output "Public-DNS" {
-  value = "${aws_instance.web-server.public_dns}"
-}
-
-
-output "myserver-arn" {
-  value = "${aws_instance.web-server.arn}"
 }
 
