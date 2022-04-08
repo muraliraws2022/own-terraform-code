@@ -1,0 +1,2 @@
+variable "hardware" {}
+variable "keyname" {}
