@@ -1,9 +1,8 @@
 terraform {
   required_version = ">= 0.11.0"
   backend "s3" {
-    bucket = "backup-state-terraform"
-    key    = "terraform/test"
+    bucket = "testingbucket873"
+    key    = "myterraform/terraform.state"
     region = "us-east-1"
-    dynamodb_table = "backend-test"
   }
 }
