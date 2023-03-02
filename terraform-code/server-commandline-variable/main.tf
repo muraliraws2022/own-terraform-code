@@ -1,5 +1,5 @@
 resource "aws_instance" "web-server" {
-  ami           = "var.ami"
+  ami           = var.ami
   instance_type = var.hardware
   key_name      = var.keyname
   tags = {
