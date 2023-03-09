@@ -1,9 +1,8 @@
-
 resource "aws_instance" "web-server" {
   ami           = "${lookup(var.ami_id, var.region)}"
   instance_type = "t2.micro"
-  key_name      = "anbu-saro-mumbai"
-  vpc_security_group_ids = ["sg-09a8ea048b465834b"]
+  key_name      = "terraform_aws"
+  vpc_security_group_ids = ["sg-0d8232b90edf724ee"]
 
 
   provisioner "file" {

@@ -1,10 +1,8 @@
-variable "access_key" {}
-variable "secret_key" {}
 variable "region" {
-  default = "ap-south-1"
+  default = "us-east-1"
 }
 variable "private_key_path" {
-  default = "anbu-saro-mumbai.pem"
+  default = "terraform_aws.pem"
 }
 
 variable "ami_id" {
