@@ -1,10 +1,6 @@
 # Variables
-variable "access_key" {
-	default = "AKIAWK3F6TTGC2L42SNE"
-}
-variable "secret_key" {
-	default = "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"
-}
+variable "access_key" { }
+variable "secret_key" { }
 variable "region" {
   default = "us-east-2"
 }
